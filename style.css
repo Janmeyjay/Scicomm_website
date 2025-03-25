@@ -1,0 +1,230 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E3F2FD; /* Light Blue */
+    color: #002147; /* Deep Navy */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+.header {
+    background: #002147;
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* Navigation Styling */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+}
+
+.search-container input {
+    border: none;
+    padding: 8px;
+    outline: none;
+    width: 200px;
+    font-size: 14px;
+}
+
+.search-container button {
+    background: #0044cc;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.search-container button:hover {
+    background: #002a80;
+}
+
+/* Advertisement Banner */
+.ad-banner {
+    width: 100%;
+    max-width: 1200px;
+    height: 80px;
+    margin: 20px auto;
+    background: #FFD700;
+    text-align: center;
+    line-height: 80px;
+    font-size: 16px;
+    color: #002147;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured Article */
+.featured-article {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.featured-article img {
+    width: 250px;
+    border-radius: 8px;
+}
+
+.article-content a {
+    color: #002147;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    transition: color 0.3s;
+}
+
+.article-content a:hover {
+    color: #FFD700;
+}
+
+/* Layout for content and sidebar */
+.content-layout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Article Card Layout */
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.article-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.article-card:hover img {
+    transform: scale(1.05);
+}
+
+.article-content {
+    padding: 12px;
+}
+
+.article-content h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #002147;
+}
+
+.article-content p {
+    font-size: 13px;
+    color: #555;
+    margin: 6px 0;
+}
+
+.article-content a {
+    color: #0044cc;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 8px;
+    transition: color 0.3s;
+}
+
+.article-content a:hover {
+    color: #FFD700;
+}
+
+/* Sidebar Advertisement */
+.sidebar-ad {
+    flex: 1;
+    background: #FFD700;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #002147;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    max-width: 280px;
+    margin-left: 15px;
+}
+
+/* Footer */
+.footer {
+    background: #002147;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+#copyright {
+    color: azure;
+}
